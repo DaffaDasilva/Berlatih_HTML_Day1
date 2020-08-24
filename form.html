@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h3>Sign Up Form</h3>
+    <form action="welcome.html">
+        <div>
+            <div>
+                <label for="fname">First name:</label>
+            </div><br>
+            <input type="text" id="fname" name="fname" value="" required>
+        </div><br>
+        <div>
+            <div>
+                <label for="lname">Last name:</label>
+            </div><br>
+            <input type="text" id="lname" name="lname" value="" required><br>
+        </div><br>
+        <div>
+            <div><label for="gender">Gender:</label></div> <br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+        </div><br>
+        <div> 
+            <div>
+                <label for="nationality">Nationality:</label>
+            </div><br>
+            <select required name="nationality" id="nationality">
+                <option value="" disabled selected>Choose Nationality</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="malaysia">Malaysia</option>
+                <option value="singapura">Singapura</option>
+            </select>
+        </div><br>
+        <div>
+            <div>
+                <label for="language">Language Spoken:</label>
+            </div><br>
+            <div>
+                <input type="checkbox" id="bahasa_indonesia" name="bahasa_indonesia" value="" required>
+                <label for="bahasa_indonesia">Bahasa Indonesia</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="english" name="english" value="">
+                <label for="english">English</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="other" name="other" value="">
+                <label for="other">Other</label><br>
+            </div>
+        </div><br>
+        <div>
+            <div>
+                <label for="bio">Bio:</label>
+            </div><br>
+            <textarea required name="bio" id="bio" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Sign Up">
+        </div>
+    </form>
+</body>
+</html>
